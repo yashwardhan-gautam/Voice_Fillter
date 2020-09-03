@@ -46,12 +46,6 @@ It took around 11 hours to prepare the dataset on Google Colab. The code is pres
 
 ---
 
-### Proposed System Architecture
-
-<img src="/assets/images/system_arch.PNG" width="800" height="350">
-
----
-
 ### Requirements
 
 *  This code was tested on Python 3.6.9 with [Google Colab](colab.research.google.com).
@@ -61,51 +55,6 @@ It took around 11 hours to prepare the dataset on Google Colab. The code is pres
     ```
     pip install -r requirements.txt
     ```
-
-
-### Model
-
-<img src="/assets/images/model_workflow.PNG" width="800" height="350">
-
----
-
-The model architecture is precisely as per the academic paper mentioned above. The model takes a input spectrogram and d vector(embedding) as input and produces a soft mask which when superimposed on the input spectrogram produces the output spectrogram. The output spectrogram is combined with the input phase to re create the primary speakers audio from the mixed input speech. 
-
-
-| Loss Function        | Optimizer          | Metrics       |
-|:--------------------:|:------------------:|:-------------:| 
-| Mean Squared Error (MSE) | adam | Sound to Distortion Ratio(SDR) | 
-
----
-
-<img src="/assets/images/model_plot.png" width="500" height="1300">
-
----
-
-### Training
-
-* The model was trained on Google Colab for 30 epochs.
-* Training took about 37 hours on NVIDIA Tesla P100 GPU.
-
-### Results
-
-* Loss
-
-<img src="/assets/images/loss.png" width="600" height="400">
-
-* Validation SDR
-
-<img src="/assets/images/dev_sdr.png" width="600" height="400">
-
-* Test 
-
-> Note: The following results are based on model weights after 29th epoch( Peak SDR on validation )
-
-| Loss          | SDR          | 
-|:-------------:|:------------:| 
-| 0.0104        | 5.3250       |
-
----
 
 ### Audio Samples
 
@@ -123,6 +72,3 @@ The model architecture is precisely as per the academic paper mentioned above. T
 
 ---
 
-### App Snippet
-
-<img src="/assets/images/app.png" width="700" height="350">
