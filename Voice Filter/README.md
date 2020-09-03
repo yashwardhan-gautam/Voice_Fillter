@@ -6,17 +6,6 @@ Our work is inspired from the the academic paper : https://arxiv.org/abs/1810.04
 
 The implementation is based on the work : https://github.com/mindslab-ai/voicefilter
 
----
-
-### Team Members
-
-1. [Angshuman Saikia](https://github.com/HeliosX7)
-
-1. [Abhinav Jain](https://github.com/jain-abhinav02)
-
-1. [Yashwardhan Gautam](https://github.com/yashwardhan-gautam)
-
----
 
 ### Introduction
 We intend to improve the accuracy of Automatic speech recognition(ASR) by separating the speech of the primary speaker. 
