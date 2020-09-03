@@ -25,9 +25,6 @@ A audio clip is processed by a separately trained deep neural network to generat
 We use the publicly available speech dataset - Librispeech. We select a primary and secondary speaker at random. For the primary speaker, select a random speech for reference and a random speech for input. Select a random speech of the secondary speaker. The input speeches of primary and secondary users are mixed which serves as one of the input. The reference speech is passed through a pre trained model ( Source: https://github.com/mindslab-ai/voicefilter ) to create an embedding which serves as the other input. The output is the input speech of the primary speaker. 
 The speeches are not used directly. Instead, they are converted into magnitude spectrogram before being fed into a deep neural network. We have used python's librosa library to perform all audio related functions.
 
-We created a dataset of 29351 samples that have been divided into 8 parts for ease of use with limited RAM. 
-Link to the kaggle dataset: https://www.kaggle.com/abhinavjain02/speech-separation
-
 ---
 
 ### Stats on Prepared Data
