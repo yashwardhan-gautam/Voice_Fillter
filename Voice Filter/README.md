@@ -8,7 +8,7 @@ The implementation is based on the work : https://github.com/mindslab-ai/voicefi
 
 
 ### Introduction
-We intend to improve the accuracy of Automatic speech recognition(ASR) by separating the speech of the primary speaker. 
+This project is to improve the accuracy of Automatic speech recognition(ASR) by separating the speech of the primary speaker. 
 This project has immense application in chatbots, voice assistants, video conferencing.
 
 ---
